@@ -1,0 +1,80 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Praktikum20042026;
+
+/**
+ *
+ * @author USER
+ */
+public class Line {
+     private Point begin;
+    private Point end;
+
+    // constructor 1
+    public Line(Point begin, Point end) {
+        this.begin = begin;
+        this.end = end;
+    }
+
+    // constructor 2
+    public Line(int x1, int y1, int x2, int y2) {
+        this.begin = new Point(x1, y1);
+        this.end = new Point(x2, y2);
+    }
+
+    // getter & setter
+    public Point getBegin() {
+        return begin;
+    }
+
+    public void setBegin(Point begin) {
+        this.begin = begin;
+    }
+
+    public Point getEnd() {
+        return end;
+    }
+
+    public void setEnd(Point end) {
+        this.end = end;
+    }
+
+    public int getBeginX() {
+        return begin.getX();
+    }
+
+    public int getBeginY() {
+        return begin.getY();
+    }
+
+    public int getEndX() {
+        return end.getX();
+    }
+
+    public int getEndY() {
+        return end.getY();
+    }
+
+    public void setBeginXY(int x, int y) {
+        begin.setXY(x, y);
+    }
+
+    public void setEndXY(int x, int y) {
+        end.setXY(x, y);
+    }
+
+    // hitung panjang garis
+    public double getLength() {
+        int xDiff = end.getX() - begin.getX();
+        int yDiff = end.getY() - begin.getY();
+        return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
+    }
+
+    @Override
+    public String toString() {
+        return "Line[begin=" + begin + ", end=" + end + "]";
+    }
+}
