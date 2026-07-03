@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Praktikum27042026;
+
 import java.util.Scanner;
 /**
  *

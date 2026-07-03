@@ -37,7 +37,6 @@ public class mainKaryawan {
                 double gajiK = in.nextDouble();
                 double totalK = 20* (gajiK*jam);
                 
-                marsya
                 kar = new  karyawanKontrak(gajiK,totalK,jam,nama,jenis);
         }
         System.out.println("----- informasi karyawan -----");
